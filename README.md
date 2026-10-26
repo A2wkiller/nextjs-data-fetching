@@ -20,8 +20,9 @@ The live Fake Store API is always fetched first. fakestoreapi.com currently
 answers some datacenter clients (CI/serverless builds) with a Cloudflare bot
 challenge instead of JSON; when that happens the pages fall back to a bundled
 snapshot of the genuine Fake Store API product data (20 official products,
-archived from `fakestoreapi.com/products`, with the official images from the
-project's open-source repo served locally) and label it visibly on the page.
+archived from `fakestoreapi.com/products`
+(web.archive.org snapshot 2026-08-23), with the official product images loaded
+directly from the project's open-source repo (github.com/keikaavousi/fake-store-api)) and label it visibly on the page.
 
 - `/dashboard` - **CSR**. `useSWR` fetches posts from
   [JSONPlaceholder](https://jsonplaceholder.typicode.com), lists post titles,
